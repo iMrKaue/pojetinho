@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BigGym - Academia</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <h1>BigGym</h1>
+                </div>
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" onclick="showSection('sobre')">Sobre</a></li>
+                    <li><a href="#" onclick="showSection('planos')">Planos</a></li>
+                    <li><a href="#" onclick="showSection('servicos')">Serviços</a></li>
+                    <li><a href="#" onclick="showSection('contato')">Contato</a></li>
+                    <li><a href="#" onclick="showSection('inscricao')">Inscrição</a></li>
+                    <li><a href="#" onclick="showSection('login')">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <div class="banner-content">
+                <h2>Bem-Vindo à BigGym</h2>
+                <p>MAIS QUE UMA ACADEMIA!
+                    Um centro de treinamento com as melhores máquinas e a maior diversidade do Brasil. Junto dos melhores especialistas e dos profissionais mais capacitados.
+                    
+                    Agora vc pode viver a filosofia Bodybuilder e mudar a sua vida, seja performance ou qualidade de vida! Aqui vc é tratado como um campeão, pois entendemos que a sua meta é a nossa meta.
+                    
+                    Aberta para todas as pessoas - Do iniciante ao avançado e do jovem a melhor idade.</p>
+                <a href="#" class="btn" onclick="showSection('planos')">Inscreva-se Agora</a>
+            </div>
+        </section>
+
+        <section id="sobre" style="display: none;">
+            <h2>Sobre a BigGym</h2>
+            <p>Na BigGym, oferecemos um espaço completo com equipamentos de última geração e profissionais qualificados para te ajudar a alcançar seus resultados.</p>
+        </section>
+
+        <section id="planos" style="display: none;">
+            <h2>Nossos Planos</h2>
+            <div class="planos-container">
+                <div class="plano">
+                    <h3>Plano Mensal</h3>
+                    <p>Acesso ilimitado por R$ 99,90/mês.</p>
+                </div>
+                <div class="plano">
+                    <h3>Plano Semestral</h3>
+                    <p>Acesso ilimitado por R$ 499,90/6 meses.</p>
+                </div>
+                <div class="plano"> 
+                    <h3>Plano Anual</h3>
+                    <p>Acesso ilimitado por R$ 899,90/ano.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" style="display: none;">
+            <h2>Serviços Oferecidos</h2>
+            <div class="servicos-container"></div>
+            <div class="servico">  
+                <h3>Musculação</h3>
+                <p>Equipamentos modernos para todos os tipos de treino.</p>
+            </div>
+            <div class="servico">  
+                <h3>Aula de Dança</h3>
+                <p>Zumba, Hip-Hop e muito mais!</p>
+            </div>
+            <div class="servico">
+                <h3>Pilates</h3>
+                <p>Fortaleça seu corpo e melhore sua flexibilidade.</p>
+            </div>
+        </section>
+
+        <section id="contato" style="display: none;">
+            <h2>Entre em Contato</h2>
+            <p>Email: contato@biggym.com | Telefone: (11) 4002-8922</p>
+        </section>
+
+        <section id="inscricao" style="display: none;">
+            <h2>Inscreva-se Agora</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="genero">Gênero:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="other">Outro</option>
+                </select>
+
+                <label for="plano">Escolha seu plano:</label>
+                <select id="plano" name="plano">
+                    <option value="mensal">Mensal</option>
+                    <option value="semestral">Semestral</option>
+                    <option value="anual">Anual</option>
+                </select>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+
+        <section id="login" style="display: none;">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="email" required>
+
+                <label for="login-senha">Senha</label>
+                <input type="password" id="login-senha" name="senha" required>
+
+                <button type="submit" class="btn">Entrar</button>
+                <a href="#" style="display: block; margin-top: 10px; color: #f39c12;">Esqueceu a Senha?</a>
+            </form>
+        </section>
+
+        <footer>
+            <p>BigGym &copy; 2024 - Todos os Direitos Reservados</p>
+        </footer>
+    </body>
+</html>
